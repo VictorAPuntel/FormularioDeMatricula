@@ -25,6 +25,49 @@
             Preencha os dados abaixo para matricular seu filho na escola de
             educação infantil Estrelas do Amanhã.
           </p>
+
+          <form enctype="multipart/form-data">
+            <fieldset class="child-info">
+              <legend>Informação da Criança</legend>
+              <div class="input-wrapper">
+                <label for="fillname">Nome Completo</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  placeholder="Qual o nome da criqnça?"
+                />
+              </div>
+              <div class="input-wrapper">
+                <label for="birth">Data de Nascimento</label>
+                <input type="date" id="birth" lang="pt-br" />
+              </div>
+
+              <div class="select-wrapper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="female">Feminino</option>
+                  <option value="male">Masculino</option>
+                  <option value="na">Prefiro não responder</option>
+                </select>
+              </div>
+
+              <div class="textarea-wrapper">
+                <label for="medical-info">Informações Médicas</label>
+                <textarea
+                  name="medical-info"
+                  id="medial-info"
+                  cols="30"
+                  rows="10"
+                  placeholder="A criança possui alguma condição médica?"
+                ></textarea>
+              </div>
+              <div class="droparea-wrapper">
+                <input type="file" name="birth-file" id="birth-file" />
+                <img src="assets/icons/cloud-upload.svg" alt="" />
+                <p>Clique aqui para selecionar os arquivos</p>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
       <aside>
